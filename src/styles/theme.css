@@ -1,0 +1,25 @@
+:root {
+/*Cores Principais do tema*/
+--cor-primaria: #0800ff;
+--cor-primaria-clara: #62b2eb;
+--cor-primaria-escura: #2a6ba1;
+
+/*Cores Secundarias e de fundo*/
+--cor-secundaria: #efefef;
+--cor-fundo-tela: #e6f2ff;
+
+/*Cores de Feedback / Status*/
+--cor-erro: #ce0000;
+--cor-aviso: #f9a13a;
+--cor-sucesso: #34b831;
+--cor-info: #62b2eb;
+
+/*Cores de Texto e Divisorias*/
+--cor-texto-principal: #01090f;
+--cor-texto-secundario: #5c5c5c;
+--cor-texto-contraste: #ffffff;
+--cor-divisor: #e0e0e0;
+
+/*Tipografia*/
+--fonte-padrao: "Helvetica", "sans-serif";
+}

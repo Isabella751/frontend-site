@@ -1,11 +1,11 @@
 .input{
     width: 100%;
     padding: 0.625rem; /* Equivale a 10px */
-    border: 1px solid var(--cor-divisor);
+    border: 1px solid rgb(255,223,0);
     font-family: var(--fonte-padrao);
-    color: var(--cor-texto-principal);
+    color: rgb(255,223,0);
     border-radius: 0.3125rem;
-    background-color: #fff;
+    background-color: rgb(128,128,128);
     transition: border-color 0.3 ease;
 }
 
@@ -13,7 +13,7 @@
 .input:focus {
     outline: none;
     border-color: var(--cor-primaria);
-    box-shadow: 0 0 0 2px var(--cor-primaria-clara);
+    box-shadow: 0 0 0 2px rgb(255,223,0);
 }
 
 /* Estilo para quando o input estiver desabilitado */

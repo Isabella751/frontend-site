@@ -1,5 +1,5 @@
 .listaContainer {
-  background-color: #ffff;
+  background-color: #000000de;
   padding: 1.5rem;
   border-radius: 0.4rem;
   box-shadow: 0 0 2rem 0.4rem rgba(0, 0, 0, 0.5);
@@ -9,8 +9,13 @@
   margin-bottom: 1.25rem;
 }
 
+.buscaContainer input::placeholder {
+  color: rgb(255, 221, 0);
+  opacity: 1;
+}
+
 .titulo {
-    color: var(--cor-primaria);
+    color: rgb(255,223,0);
     margin-bottom: 1.25rem;
 }
 
@@ -23,12 +28,14 @@
 .tabela th, .tabela td {
     padding: 0.625rem;
     border-bottom: 0.01rem solid var(--cor-divisor);
+    color: rgb(212, 175, 55);
 }
 
 .actionButton{
     margin-right: 0.625rem;
     cursor: pointer;
-    background: none;
+    background: rgb(212, 175, 55);
+    color: #ffffff;
     transition: filter 0.3s ease;
     display: inline-flex;
     align-items: center;
@@ -42,3 +49,4 @@
 .btnExcluir{
     color: var(--cor-erro);
 }
+

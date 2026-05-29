@@ -1,8 +1,7 @@
 import { Container } from '../../components/Container';
 import { MainForm } from '../../MainForm';
 import { useState, useEffect } from 'react';
-import { ListaCursos } from '../../ListaCursos';
-import type { Curso } from '../../ListaCursos';
+import { ListaCursos, type Curso } from '../../ListaCursos';
 
 
 export function Home() {

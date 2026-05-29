@@ -1,17 +1,17 @@
 .formularioContainer {
-    background-color: #ffff;
+    background-color: #000000de;
     padding: 1.25rem;
     border-radius: 0.4rem;
     box-shadow: 0 0 2rem 0.4rem rgba(0, 0, 0, 0.5);
 }
 
 .titulo{
-    color: var(--cor-primaria);
+    color: rgb(255, 223, 0);
     margin-bottom: 1rem;
 }
 
 .label{
-    color: var(--cor-texto-secundario);
+    color: rgb(212, 175, 55);
     margin-bottom: 0.3125rem; /* equivale a 2px */
     font-weight: bold;
 }
@@ -28,12 +28,18 @@
     justify-content: flex-end;
 }
 
+.inputNomeCurso::placeholder {
+    color: rgb(255, 221, 0);
+    opacity: 1;
+}
+
 .estiloSelect{
     padding: 0.25rem;
     border-color: var(--cor-divisor);
-    border: 1px solid var(--cor-divisor);
+    background-color: rgb(128,128,128);
+    border: 1px solid rgb(255,223,0);
     font-family: var(--fonte-padrao);
-    color: var(--cor-texto-principal);
+    color: rgb(212, 175, 55);
     border-radius: 0.3125rem;
-    color: var(--cor-texto-secundario);
+    color: rgb(255, 221, 0);
 }

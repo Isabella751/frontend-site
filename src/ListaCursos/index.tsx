@@ -3,6 +3,7 @@ import styles from "./style.module.css";
 import { Container } from "../components/Container";
 import { InputPadrao } from "../components/InputPadrao";
 import { Pencil, X } from "lucide-react";
+import { useState } from "react";
 /* fazendo contrato dos recursos*/
 
 export interface Curso {
@@ -18,13 +19,23 @@ interface ListaCursosProps {
 }
 
 export function ListaCursos({ cursos, aoEditar, aoExcluir }: ListaCursosProps) {
+  const [busca, setBusca] = useState("");
+
+  const cursosFiltrados = cursos.filter((curso) =>
+    curso.nome.toLowerCase().includes(busca.toLowerCase())
+  );
   return (
     <>
       <Container>
         <section className={styles.listaContainer}>
           <h2 className={styles.titulo}>Lista de Cursos</h2>
           <div className={styles.buscaContainer}>
-            <InputPadrao type="text" placeholder="Buscar curso..." />
+            <InputPadrao 
+              type="text" 
+              placeholder="Buscar curso..."
+              value={busca}
+              onChange={(e) => setBusca(e.target.value)}
+            />
           </div>
           <table className={styles.tabela}>
             <thead>
@@ -35,7 +46,7 @@ export function ListaCursos({ cursos, aoEditar, aoExcluir }: ListaCursosProps) {
               </tr>
             </thead>
             <tbody>
-              {cursos.map((curso) => (
+              {cursosFiltrados.map((curso) => (
                 <tr key={curso.id}>
                     <td>{curso.nome}</td>
                     <td>{curso.periodo}</td>

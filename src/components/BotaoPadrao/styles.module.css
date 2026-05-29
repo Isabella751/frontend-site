@@ -1,5 +1,5 @@
 .botao{
-    background-color: var(--cor-primaria);
+    background-color: rgb(212, 175, 55);
     color: var(--cor-texto-contraste);
     padding: 0.625rem 1.25rem;
     border: none;

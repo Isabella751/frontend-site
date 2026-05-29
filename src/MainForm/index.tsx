@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Container } from "../components/Container";
 import { InputPadrao } from "../components/InputPadrao";
 import { BotaoPadrao } from "../components/BotaoPadrao";
@@ -82,6 +83,7 @@ export function MainForm({ aoAdicionar, aoAtualizar, cursoEmEdicao }: MainFormPr
                         value={dadosCurso.nomecurso}
                         onChange={lidarComMudanca}
                         required
+                        className={Styles.inputNomeCurso}
                         ></InputPadrao>
                     </div>
                     <div className={Styles.pularlinha}>
@@ -95,10 +97,10 @@ export function MainForm({ aoAdicionar, aoAtualizar, cursoEmEdicao }: MainFormPr
                         className={Styles.estiloSelect}
                         >
                             <option value="">Selecione o período</option>
-                            <option value="matutino">Matutino</option>
-                            <option value="vespertino">Vespertino</option>
-                            <option value="noturno">Noturno</option>
-                            <option value="integral">Integral</option>
+                            <option value="Matutino">Matutino</option>
+                            <option value="Vespertino">Vespertino</option>
+                            <option value="Noturno">Noturno</option>
+                            <option value="Integral">Integral</option>
                         </select>
                     </div>
                     <div className={Styles.alinharBotao}>
